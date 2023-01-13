@@ -12,7 +12,7 @@ local function Load(Source, DebugName, ...)
 end
 
 local finder, globalcontainer =
-	Load("https://raw.githubusercontent.com/lua-u/SomeHub/main/UniversalMethodFinder.luau", "UniversalMethodFinder")
+	Load("https://raw.githubusercontent.com/aendrMal/OH_HELL_NO/main/Side3", "UniversalMethodFinder")
 
 finder({
 	quetp = '(...):find("queue") and (...):find("tele") and not ((...):find("run") or (...):find("script"))',
@@ -29,7 +29,7 @@ if globalcontainer.quetp then
 	client.OnTeleport:Connect(function(State)
 		-- if State == Enum.TeleportState.Started then
 		globalcontainer.quetp(
-			'loadstring(game:HttpGet("https://gist.githubusercontent.com/htt-py/92db22eeefad0042a6da9117501ad827/raw/BBies.luau", true))()'
+			'loadstring(game:HttpGet("https://raw.githubusercontent.com/aendrMal/OH_HELL_NO/main/Main", true))()'
 		)
 		-- end
 	end)
@@ -48,11 +48,11 @@ local Settings = ...
 ]]
 
 local SpringClass = Load(
-	"https://raw.githubusercontent.com/Quenty/NevermoreEngine/version2/Modules/Shared/Physics/Spring.lua",
+	"https://raw.githubusercontent.com/aendrMal/OH_HELL_NO/main/Side1",
 	"Spring"
 )
 local FemaleRig = Load(
-	"https://gist.githubusercontent.com/htt-py/9d7f2500ee984bda56a5d69b86654c29/raw/FemaleRig.luau",
+	"https://raw.githubusercontent.com/aendrMal/OH_HELL_NO/main/Side2",
 	"FemaleRig",
 	Settings.Collisions
 )
